@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Languages Quiz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/index.css">
+
+<!-- Third party an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<!--logo as favicon-->
+<link rel="icon" href="ITEMS/logogk.ico">
+<style>
+  body {
+    font-family: IBM Plex Mono,monospace;
+    margin-left: 40px;
+  }
+  .backgroundform {
+    background-color: cadetblue;
+  }
+</style>
+</head>
+
+<body>
+    <!---Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a class="navbar-brand" href="index.html"><img src="ITEMS/logotransparent.png"width="40px" height="40px"></a>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+       
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+       <!---main page - quiz categories-->
+       <div id="quizlanguages">
+        <h2 style="color: #fff;text-align: center;">Languages Quiz</h2>
+
+         <!--- All the options of answers have tooltip with exta information--> 
+         <!--- Correct answers and wrong answers are marked by their class name -->    
+        <div> 
+       <form></form>
+         <P>1. Which word means “table” in Spanish?        <BR>
+        <input type="radio" name="1" class="wrong" id="techo"><a href="#" title="Techo means 'roof'">techo</a><BR>
+        <input type="radio" name="1" class="correct"id="mesa"><a href="#" title="Mesa is table in Spanish">mesa</a><BR>
+        <input type="radio" name="1" class="wrong"id="puerta"><a href="#" title="Puerta means “door”">puerta</a><BR>
+        <input type="radio" name="1" class="correct"id="tabla"><a href="#" title="Tabla means “board, floorboard”">tabla</a><BR>
+ 
+    </p>
+       
+       <P>2. There are ... ways to spell the sound ‘ee’ in English:<BR>
+       <input type="radio" name="2" class="correct" id="seven"><a href="#" title="This sentence contains all of them: ‘He believed Caesar could see people seizing the seas’.">seven</a><BR>
+       <input type="radio" name="2" class="wrong" id="five"><a href="#" title="did you know that there are five vowels in English?(a,e,i,o,u)">five</a><BR>
+       <input type="radio" name="2" class="wrong" id="six"><a href="#" title="did you know that 'almost' is the only English word that has 6 letters arranged alphabetically?">six</a><BR>
+       <input type="radio" name="2" class="wrong" id="nine"><a href="#" title="did you know that 'noon' originally meant the ninth hour of the day after sunrise, which was around 3pm?">nine</a><BR>
+       </p>
+       
+       <P>3. Among the coutries below, which one has Tigrinya as an official language?<BR>
+       <input type="radio" name="3" class="wrong" id="Sudan"><a href="#" title="The offcial languages of Sudan are Arabic and English.">Sudan</a><BR>
+       <input type="radio" name="3" class="wrong" id="Somalia"><a href="#" title="The offcial languages of Somalia are Somali and Arabic">Somalia</a><BR>
+       <input type="radio" name="3" class="wrong" id="SouthSudan"><a href="#" title="Tigrinya is not among South Sudan official languages">South Sudan</a><BR>
+       <input type="radio" name="3" class="correct" id="Eritrea"class="correct"><a href="#" title="Tigrinya language is an official language in Eritrea, Ethiopia and  in the Tigray region.">Eritrea</a><BR>
+       </p>
+
+       <P>4. What is the English translation of this sentence in Yoruba "Orile ede to rewa ni nigeria"?        <BR>
+        <input type="radio" name="4" class="wrong" id="big"><a href="#" title="The word 'big' is 'nla' in Yoruba">Nigeria is a big country</a><BR>
+        <input type="radio" name="4" class="wrong" id="sunny"><a href="#" title="The word 'sunny' is 'oorun' in Yoruba.">Nigeria is a sunny country</a><BR>
+        <input type="radio" name="4" class="correct" id="beautiful"><a href="#" title="'Orile ede to rewa ni nigeria' means 'Nigeria is a beautiful country'">Nigeria is a beautiful country</a><BR>
+        <input type="radio" name="4" class="wrong" id="blessed"><a href="#" title="The word 'blessed' is 'ibukun' in Yoruba">Nigeria is a blessed country</a><BR>
+        </p>
+        
+        <P>5. In which language is this saying 'Kinywa ni jumba la maneno'(in English Mouth is the home of words)<BR>
+
+          <input type="radio" name="5" class="correct" id="swahili"><a href="#" title="Pongezi">Swahili</a><BR>
+        <input type="radio"  name="5" class="wrong" id="shona"><a href="#" title="Hapana">Shona</a><BR>
+        <input type="radio"  name="5" class="wrong" id="zulu"><a href="#" title="Hapana">Zulu</a><BR>
+        <input type="radio"  name="5" class="wrong" id="oromo"><a href="#" title="Hapana">Oromo</a><BR>
+        </p>
+        
+        <P>6. The word 'raisin' exist both in French and in English... <BR>
+        <input type="radio" name="6" class="wrong" id="exactsame"><a href="#" title="Hmmm not this one">and they have the exact same meaning</a><BR>
+        <input type="radio" name="6" class="wrong"  id="notrelated"> <a href="#" title="Do you speak French?">and they are not related at all</a><BR>
+        <input type="radio" name="6" class="correct"  id="slightdifference" class="correct"><a href="#" title="In English 'raisin' is a a dried grape while in French 'raisin' is the equivalent of 'grape'">and they have a slight difference</a><BR>
+        <input type="radio" name="6" class="wrong"  id="nounadjective"><a href="#" title="Did you know that in English we pronounce ˈreɪzn̩ (rei-zn) , in French ʁezɛ̃ (ré-zin)">and one is a noun while the other is an adjective</a><BR>
+        </p>
+
+        <P>7. Which one does NOT mean 'I love you' ? <BR>
+          <input type="radio" name="7" class="wrong" id="lingala"><a href="#" title="The translation in Lingala means 'I love you'">Na lingi yo</a><BR>
+          <input type="radio" name="7" class="wrong" id="italian"><a href="#" title="The translation in Italian means 'I love you'."> Ti amo</a><BR>
+          <input type="radio"name="7" class="wrong" id="korean"><a href="#" title="The translation in Korean means 'I love you'"> 사랑해 (salanghae)</a><BR>
+          <input type="radio" name="7" class="correct" id="dutch"><a href="#" title="'Ik heb honger' does NOT mean 'I love you' but 'I am hungry'."> Ik heb honger</a><BR>
+          </p>
+
+          <P>8. From which language family does Arabic come from? <BR>
+            <input type="radio" name="8" class="wrong" id="nigercongo"><a href="#" title="An exemple from this language family is Wolof.">Niger–Congo</a><BR>
+            <input type="radio" name="8" class="correct"  id="afroasiatic"><a href="#" title="Arabic belongs to the Afro-Asiatic language family.Hebrew, Hausa and Kabyle are other widely spoken Afro-Asiatic languages.">Afro-Asiatic</a><BR>
+            <input type="radio" name="8" class="wrong" id="pamanyungan"><a href="#" title="An exemple from this language family is Wajarri.">Pama–Nyungan</a><BR>
+            <input type="radio" name="8" class="wrong" id="indoeuropean"><a href="#" title="An exemple from this language family is Armenian.">Indo-European</a><BR>
+            </p>
+
+            <P>9. ...is a Portuguese (Brasil) word for a sad state of intense longing for someone or something that is absent<BR>
+              <input type="radio" name="9" class="correct"  id="saudade"><a href="#" title="The latin word for saudade is 'desiderium'.">saudade</a><BR>
+              <input type="radio" name="9" class="wrong" id="saude"><a href="#" title="'Saude' means 'health'">saúde</a><BR>
+              <input type="radio" name="9" class="wrong" id="sagacidade"><a href="#" title="'Sagacidade' means 'wit'">sagacidade</a><BR>
+              <input type="radio" name="9" class="wrong" id="sumidade"><a href="#" title="'Sumidade' means 'high priest/priestess'">sumidade</a><BR>
+              </p>
+
+              <P>10. What is the Finnish word for 'end' ?:<BR>
+                <input type="radio" name="10"class="wrong" id="alkaa"><a href="#" title="This word means 'start'.">alkaa</a><BR>
+                <input type="radio" name="10"class="wrong"  id="kavella"><a href="#" title="This word means 'walk'.">kävellä</a><BR>
+                <input type="radio" name="10"class="wrong"  id="choklad"><a href="#" title="This word means 'chocolate'.">choklad</a><BR>
+                <input type="radio" name="10" class="correct" id="paa"><a href="#" title=" This is the end.">pää</a><BR>
+                </p>
+        <div></div>
+        <div></div>
+      <button type="submit" value="submit">Submit</button>
+      </form>
+      <P>Your results : </P>
+      
+
+        </div>
+      </div>
+    </div> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      <button style="background-color: blueviolet"><a href="languages.html"><p> Try again </p></a></button>
+      
+      <button style="background-color: blueviolet"><a href="home.html"><p> Choose another Quiz </p></a></button>
+     
+      <button style="background-color: blueviolet"><a href="thankyou.html"><p> Leave </p></a></button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p style="color: #fff;text-align: center">Copyright © General Knowledge 2020</p>
+    </footer>
+    
+<script src="JS/languages.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script>
+   const myForm= document.getElementsByTagName ("input");
+myForm.onsubmit= function(){
+let correctAnswers = document.getElementsByClassName ("correct");
+let wrongAnswers= document.getElementsByClassName ("wrong");
+const submitButton = document.getElementById('submit');
+
+var yourResults = (myForm - wrongAnswers) + correctAnswers;
+};
+ </script>
+</body>
+</html>

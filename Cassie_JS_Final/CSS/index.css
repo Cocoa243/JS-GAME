@@ -1,0 +1,151 @@
+/*Background image*/
+body {
+background-image: url("../ITEMS/neonclouds.JPG");
+  background-repeat: no-repeat, repeat;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+/*Top nav*/
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+    /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: IBM Plex Mono,monospace;
+    font-size: 18px;
+  }
+  
+    /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+    /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #fe019a;
+    color: white;
+  }
+  
+    /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+/*Text*/
+h1 {
+  font-family: IBM Plex Mono,monospace;
+  font-size: 40px;
+  color: #0900ff;
+  text-shadow: 0 2px 5px rgba(246,73,167,.6);
+ }
+h2 {
+    font-family: IBM Plex Mono,monospace;
+    font-size: 30px;
+    color: #0900ff;
+    text-shadow: 0 2px 5px rgba(246,73,167,.6);
+   }
+ p {
+    font-family: IBM Plex Mono,monospace;
+    font-size: 20px;
+    color: #fff;
+    
+   }
+/*Box*/
+.rectangle {
+    height: 200px;
+    width: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    }
+    .rectangle:hover {
+     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)
+    }
+/*Button  landing page*/
+.button {
+    
+    border: 2px solid  #fff;;
+    border-radius: 4px;
+    background-color: transparent;
+    color:#fff;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    
+  }
+ 
+  .button:hover {
+    background-color:  rgba(246,73,167,.6);
+    color: #fff;;
+  }
+  /*Footer*/
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #107082;
+    color: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top:100px; 
+   
+  }
+  /*Home - Main page Design*/
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:400px;
+    height:100px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 50px 16px 0 #fff;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    background-color:#fff;
+  }
+  /*Cloumn*/
+  .block{
+    display: block;
+    padding: 50px 0;
+    text-align: center;
+    
+  }
+  .grid{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+ 
+  }
+  .gutter{
+    margin-left: ($gutter / 2);
+    margin-right: ($gutter / 2);
+  }
+  .col-50{
+    width: 50%;
+    float: left;
+  }
