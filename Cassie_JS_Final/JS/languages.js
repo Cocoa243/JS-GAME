@@ -185,13 +185,14 @@ document.addEventListener("DOMContentLoaded", function(){
 //function countScore (
 //    var i = document.getElementById("quizlanguages");   
 //)
-const myForm= document.getElementsByTagName ("input");
-myForm.onsubmit= function(){
-let correctAnswers = document.getElementsByClassName ("correct");
-let wrongAnswers= document.getElementsByClassName ("wrong");
+//Last try 9-7-2020 
+//const myForm= document.getElementsByTagName ("input");
+//myForm.onsubmit= function(){
+//let correctAnswers = document.getElementsByClassName ("correct");
+//let wrongAnswers= document.getElementsByClassName ("wrong");
 
-var yourResults = (myForm - wrongAnswers) + correctAnswers;
-};
+//var yourResults = (myForm - wrongAnswers) + correctAnswers;
+//};
 //value = "correct"
 //let idioms = document.querySelectorAll(".correct");
 //idioms.forEach(element => {console.log(element)
@@ -204,3 +205,18 @@ var yourResults = (myForm - wrongAnswers) + correctAnswers;
 //correctAnswers.forEach
 
 //yourResults++
+
+    document.getElementsByClassName('correct').onclick = changeColor;   
+
+    function changeColor() {
+        document.body.style.color = "green";
+        return true;
+    }  
+    document.getElementsByClassName('wrong').onclick = changeColor;   
+
+    function changeColor() {
+        document.body.style.color = "red";
+        return false;
+    }
+
+
